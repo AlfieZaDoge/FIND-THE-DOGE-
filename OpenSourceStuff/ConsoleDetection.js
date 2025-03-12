@@ -21,3 +21,7 @@ function detectConsole() {
 window.onload = function() {
     setInterval(detectConsole, 1000); // Check every second
 };
+
+
+// this is how the anti cheat works i prefer not to just put the open source html file due to people might try and claim that they made it so i incrypted it!
+// tbh half the time this shit does not even work lol

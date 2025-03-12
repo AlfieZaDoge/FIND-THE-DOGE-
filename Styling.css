@@ -1,0 +1,171 @@
+body {
+    background-color: white;
+    color: black;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+.top-text {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.hidden-doge {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    background: white;
+    pointer-events: auto;
+    cursor: pointer;
+    user-select: none; /* Prevent selection */
+    -webkit-user-select: none; /* For Safari */
+}
+
+#giveUpBtn {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 12px 25px;
+    font-size: 20px;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+#giveUpBtn:hover {
+    background-color: #ff4500;
+}
+#mouseCoords {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+#timer {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    display: none;
+    text-align: center;
+}
+#tweetBtn {
+    background-color: #1da1f2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+#tweetBtn:hover {
+    background-color: #0d8ddc;
+}
+
+#RetryBtn {
+    background-color: #1eff00ce;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+#RetryBtn:hover {
+    background-color: #1eff00a1;
+}
+
+#StartBtn {
+    background-color: #1eff00ce;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+#StartBtn:hover {
+    background-color: #1eff008f;
+}
+
+#RetryBtnGiveUp {
+    background-color: #1eff00ce;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+#RetryBtnGiveUp:hover {
+    background-color: #1eff008f;
+}
+
+#DiscordBtn {
+    background-color: #738ADB;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+#DiscordBtn:hover {
+    background-color: #738adbdc;
+}
+
+.shake {
+animation: shake 0.5s ease-in-out;
+}
+@keyframes shake {
+0%, 100% { transform: translateX(0); }
+25% { transform: translateX(-5px); }
+50% { transform: translateX(5px); }
+75% { transform: translateX(-5px); }
+}
+
+@keyframes massivePulse {
+    0% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(10); opacity: 0.9; } 
+    100% { transform: scale(1); opacity: 1; }
+}
+
+.massiveDoge {
+    animation: massivePulse 0.5s ease-in-out;
+}

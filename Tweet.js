@@ -4,3 +4,5 @@ document.getElementById("tweetBtn").onclick = function() {
     const tweetUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(tweetText)}`;
     window.open(tweetUrl, "_blank");
 };
+
+// this will allow you to tweet your time it took to find the doge element
